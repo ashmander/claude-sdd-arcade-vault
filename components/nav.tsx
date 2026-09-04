@@ -11,12 +11,10 @@ export function Nav() {
   const [open, setOpen] = useState(false);
   const user = useSyncExternalStore(subscribeToUser, getStoredUser, () => null);
 
-  const isActive = (name: "biblioteca" | "salon" | "auth") => {
+  const isActive = (name: "inicio" | "biblioteca" | "salon" | "auth") => {
+    if (name === "inicio") return pathname === "/";
     if (name === "biblioteca") {
-      return (
-        pathname === "/" ||
-        pathname.startsWith("/juego")
-      );
+      return pathname.startsWith("/biblioteca") || pathname.startsWith("/juego");
     }
     if (name === "salon") return pathname.startsWith("/salon");
     return pathname.startsWith("/auth");
@@ -39,7 +37,10 @@ export function Nav() {
           </div>
         </Link>
         <div className="links">
-          <Link className={isActive("biblioteca") ? "active" : ""} href="/">
+          <Link className={isActive("inicio") ? "active" : ""} href="/">
+            Inicio
+          </Link>
+          <Link className={isActive("biblioteca") ? "active" : ""} href="/biblioteca">
             Biblioteca
           </Link>
           <Link className={isActive("salon") ? "active" : ""} href="/salon">
@@ -77,7 +78,10 @@ export function Nav() {
         <div className="pixel neon-cyan" style={{ fontSize: 11, marginBottom: 16 }}>
           MENÚ
         </div>
-        <Link className={isActive("biblioteca") ? "active" : ""} href="/" onClick={close}>
+        <Link className={isActive("inicio") ? "active" : ""} href="/" onClick={close}>
+          Inicio
+        </Link>
+        <Link className={isActive("biblioteca") ? "active" : ""} href="/biblioteca" onClick={close}>
           Biblioteca
         </Link>
         <Link className={isActive("salon") ? "active" : ""} href="/salon" onClick={close}>
