@@ -1,6 +1,6 @@
 # 02 — Pantalla Home
 
-**Estado:** Approved
+**Estado:** Implemented
 **Depende de:** SPEC 01
 **Fecha:** 2026-09-04
 
@@ -44,17 +44,17 @@ No se introduce ninguna estructura de datos nueva. Se reutilizan `Game`, `GAMES`
 
 ## Criterios de aceptación
 
-- [ ] `npm run dev` levanta la app y `/` muestra la pantalla Home (hero, why, juegos destacados, stats, actividad en vivo, pricing, CTA final) igual al template.
-- [ ] `/biblioteca` muestra la biblioteca de juegos (mismo comportamiento que antes tenía `/`).
-- [ ] El Nav muestra "Inicio" y "Biblioteca" como links separados, cada uno resaltado como activo en su ruta correspondiente, en desktop y en el panel móvil.
-- [ ] El Nav no incluye un link "Acerca de".
-- [ ] Los botones "EXPLORAR JUEGOS", "VER TODOS LOS JUEGOS" e "INSERTAR MONEDA" navegan a `/biblioteca`.
-- [ ] El botón "CREAR CUENTA" navega a `/auth`.
-- [ ] Cada mini-card del rail "JUEGOS DISPONIBLES AHORA" navega a `/juego/[id]` con el id correcto.
-- [ ] El botón "VER SALÓN →" navega a `/salon`.
-- [ ] Las secciones con la clase `reveal` aparecen con animación al hacer scroll (igual que en el template).
-- [ ] `npm run lint` pasa sin errores.
-- [ ] El diseño visual de Home (colores, tipografías, animaciones neón, silhouettes flotantes) coincide con `references/home-about/`.
+- [X] `npm run dev` levanta la app y `/` muestra la pantalla Home (hero, why, juegos destacados, stats, actividad en vivo, pricing, CTA final) igual al template.
+- [X] `/biblioteca` muestra la biblioteca de juegos (mismo comportamiento que antes tenía `/`).
+- [X] El Nav muestra "Inicio" y "Biblioteca" como links separados, cada uno resaltado como activo en su ruta correspondiente, en desktop y en el panel móvil.
+- [X] El Nav no incluye un link "Acerca de".
+- [X] Los botones "EXPLORAR JUEGOS", "VER TODOS LOS JUEGOS" e "INSERTAR MONEDA" navegan a `/biblioteca`.
+- [X] El botón "CREAR CUENTA" navega a `/auth`.
+- [X] Cada mini-card del rail "JUEGOS DISPONIBLES AHORA" navega a `/juego/[id]` con el id correcto.
+- [X] El botón "VER SALÓN →" navega a `/salon`.
+- [X] Las secciones con la clase `reveal` aparecen con animación al hacer scroll (igual que en el template).
+- [X] `npm run lint` pasa sin errores.
+- [X] El diseño visual de Home (colores, tipografías, animaciones neón, silhouettes flotantes) coincide con `references/home-about/`.
 
 ## Decisiones tomadas y descartadas
 
