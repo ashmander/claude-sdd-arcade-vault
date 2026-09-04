@@ -1,6 +1,6 @@
 # 01 — MVP visual: pantallas de Arcade Vault
 
-**Estado:** Approved
+**Estado:** Implemented
 **Depende de:** —
 **Fecha:** 2026-09-03
 
@@ -78,16 +78,16 @@ No hay nuevas estructuras persistidas en servidor — todo vive en el cliente.
 
 ## Criterios de aceptación
 
-- [ ] `npm run dev` levanta la app y `/` muestra la biblioteca de juegos con búsqueda y filtro por categoría funcionando.
-- [ ] Cada tarjeta de juego navega a `/juego/[id]` mostrando sinopsis, stats y tabla de mejores puntuaciones.
-- [ ] `/juego/[id]/jugar` muestra el HUD, incrementa el puntaje automáticamente, permite pausar, terminar la partida y guardar una puntuación con iniciales.
-- [ ] Tras guardar una puntuación, `localStorage` contiene la entrada bajo la clave `av_scores`.
-- [ ] `/auth` permite iniciar sesión, crear cuenta o entrar como invitado; el nombre de usuario aparece en el `Nav` y persiste tras recargar (clave `av_user` en `localStorage`); cerrar sesión limpia el estado.
-- [ ] `/salon` muestra podio y tabla de posiciones por juego, con tabs que cambian el juego mostrado.
-- [ ] La navegación (`Nav`) resalta la sección activa y el menú hamburguesa funciona en viewport móvil.
-- [ ] Ningún juego (Bloque Buster, Caída, Serpentina, etc.) tiene lógica jugable real — el reproductor solo simula puntaje.
-- [ ] `npm run lint` pasa sin errores.
-- [ ] El diseño visual (colores, tipografías, animaciones neón/CRT) coincide con `references/templates/`.
+- [X] `npm run dev` levanta la app y `/` muestra la biblioteca de juegos con búsqueda y filtro por categoría funcionando.
+- [X] Cada tarjeta de juego navega a `/juego/[id]` mostrando sinopsis, stats y tabla de mejores puntuaciones.
+- [X] `/juego/[id]/jugar` muestra el HUD, incrementa el puntaje automáticamente, permite pausar, terminar la partida y guardar una puntuación con iniciales.
+- [X] Tras guardar una puntuación, `localStorage` contiene la entrada bajo la clave `av_scores`.
+- [X] `/auth` permite iniciar sesión, crear cuenta o entrar como invitado; el nombre de usuario aparece en el `Nav` y persiste tras recargar (clave `av_user` en `localStorage`); cerrar sesión limpia el estado.
+- [X] `/salon` muestra podio y tabla de posiciones por juego, con tabs que cambian el juego mostrado.
+- [X] La navegación (`Nav`) resalta la sección activa y el menú hamburguesa funciona en viewport móvil.
+- [X] Ningún juego (Bloque Buster, Caída, Serpentina, etc.) tiene lógica jugable real — el reproductor solo simula puntaje.
+- [X] `npm run lint` pasa sin errores.
+- [X] El diseño visual (colores, tipografías, animaciones neón/CRT) coincide con `references/templates/`.
 
 ## Decisiones tomadas y descartadas
 
