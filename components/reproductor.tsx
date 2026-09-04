@@ -130,7 +130,7 @@ export function Reproductor({ game }: { game: Game }) {
               <button className="btn" onClick={restart}>
                 JUGAR DE NUEVO
               </button>
-              <button className="btn magenta" onClick={() => router.push("/")}>
+              <button className="btn magenta" onClick={() => router.push("/biblioteca")}>
                 VOLVER AL VAULT
               </button>
             </div>
